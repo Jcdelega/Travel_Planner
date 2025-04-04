@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel planner</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Orbitron&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Travel planner</h1>
+    </header>
+    <main>
+        <section class="inputs-section">
+            <h2>Create a new trip</h2>
+            <input type="text" id="name" placeholder="Name your trip">
+            <input type="text" id="from" placeholder="From">
+            <input type="text" id="to" placeholder="To">
+            <input type="number" id="duration" placeholder="How many days are you going to be out?">
+            <input type="text" id="country" placeholder="Country">
+            <select name="" id="transportation">
+                <option value="" selected hidden disabled >Select your mean of transportation</option>
+                <option value="Plane">Plane</option>
+                <option value="Bus">Bus</option>
+                <option value="Train">Train</option>
+                <option value="Taxi">Taxi</option>
+            </select>
+            <button onclick="createTravel()">Add travel</button> <!-- Create a new travel -->
+        </section>
+        <section>
+            <h2>These are your registered travels</h2>
+            <div id="travels-list">
+    
+            </div>
+        </section>
+        <section>
+            <div id="modal" class="modal-overlay">
+                <div class="modal">
+                    <p id="modal-text"></p>
+                    <button onclick="closeModal()">Close</button> <!-- Close Modal -->
+                </div>
+            </div>
+        
+            <div id="prompt-modal" class="modal-overlay">
+                <div class="modal">
+                    <p>Add a new task to this travel:</p>
+                    <input type="text" id="prompt-input">
+                    <div class="modal-buttons">
+                        <button onclick="promptConfirmation()">Accept</button> <!-- Confirm -->
+                        <button onclick="closePrompt()" class="cancel">Cancel</button> <!-- Close -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #59636e;
+    color: white;
+}
+
+header {
+    font-family: "Bungee Tint", sans-serif;
+    background: #0a3069;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1.5rem;
+    max-width: 700px;
+    background-color:#333;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.inputs-section{
+    background-image: url("https://www.capturelandscapes.com/wp-content/uploads/2020/05/Dolomites_B8A2683-web.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    padding: 1.5rem;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); 
+}
+
+input,
+button,
+select{
+    padding: 0.5rem;
+    margin: 0.3rem 0;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204,);
+    width: 100%;
+    opacity: .8;
+}
+
+button {
+    background-color: #0a3069;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+.viaje-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #fafafa;
+}
+
+.task {
+    margin-top: 0.5rem;
+}
+
+.task li {
+    margin: 0.2rem 0;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-image: url("https://media.worldnomads.com/create/learn/photography/landscape-photography-social.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#1a0917;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-weight: 900;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+}
+
+.modal input {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.modal-buttons button.cancel {
+    background: #ccc;
+    color: #333;
+}
+
+.task {
+    list-style: none;
+    padding: 0;
+}
+
+.task li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f569c;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.task li button {
+    background: #ab1100;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+    width: auto;
+    height: auto;
+}
+
+
+.task li button:hover {
+    background: #ff2a12;
+}
+
+.danger-button {
+    background-color: #ab1100;
+}
+
+.danger-button:hover {
+    background-color: #ff2a12;
+}
